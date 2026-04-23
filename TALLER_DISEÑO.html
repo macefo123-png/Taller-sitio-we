@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALSTORE</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #c0c7ce;
+}
+
+/* Carrusel centrado */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* 👇 AQUÍ ESTÁ EL CAMBIO IMPORTANTE */
+.carousel {
+  max-width: 600px;
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 250px;
+  object-fit: contain;
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">ALSTORE PEREIRA</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-5">
+        <li class="nav-item">
+          <a class="nav-link fw-bold active" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="#">ACERCA DE NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="#">PRODUCTOS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTENIDO -->
+<div class="container">
+
+  <!-- CARRUSEL -->
+  <div class="carousel-container">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="relojes.png" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+          <img src="audifonos.png" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+          <img src="gorras.png" class="d-block w-100">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="row mt-4 g-4 text-center">
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="audi.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Airpods Pro 2</h5>
+          <p class="card-text">Los AirPods Pro son audífonos inalámbricos de Apple con cancelación activa de ruido, sonido de alta calidad y ajuste cómodo con almohadillas de silicona</p>
+          <a href="#" class="btn btn-primary">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="relo.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Reloj Luxury</h5>
+          <p class="card-text">Un reloj de lujo es un accesorio elegante y exclusivo que combina materiales premium, precisión y diseño sofisticado, reflejando estilo y estatus.</p>
+          <a href="#" class="btn btn-primary">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="gor.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Gorras</h5>
+          <p class="card-text">Las gorras son un accesorio clave del estilo urbano (streetwear): protegen del sol y le dan personalidad a cualquier outfit. Las más populares son tipo snapback, trucker y baseball, de marcas como New Era, Nike y Adidas</p>
+          <a href="#" class="btn btn-primary">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
